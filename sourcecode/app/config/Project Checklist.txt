@@ -1,0 +1,70 @@
+===================
+=Project Checklist=
+===================
+Follow the list below and check off each step for a quick start
+
+-----------
+Route Setup
+-----------
+-Create CRUD routes from wireframe
+--Determine number of GET calls and there route names
+--Determine number of POST calls and there route names
+
+-Map routes to Controller(s) methods
+
+----------------
+Controller Setup
+----------------
+-Rename template controller to descriptive plural name of project
+-determine if you need other controllers for discrete functionality and create them
+
+----------------
+Front End Design
+----------------
+-Create all html files from wireframes (no styling, zero, zilch....NONE)
+--Any place where data from DB will be dislay hard code data to test proper structure and looping (where applicable)
+
+-List exact registration needs (i.e. name, email, password, etc...)
+
+----------------
+Back End Design
+----------------
+-Turn on MAMP
+
+-Create DB for project
+
+-Create ERD from Auth Template
+--Edit users table to reflect registration needs from front end 
+
+-Add tables required by app and setup required relationships
+--Prefill (applicable) tables with data to test SQL queries
+--Note: if a many to many table required then add an id column to prevent duplicate FK errors
+--- Use data existence checks to determine if a record has been created or needs to be updated
+
+-Create all restful queries: (Create, Read, Update, Destroy) for each table 
+-- Store results in SQL Setup.txt 
+
+-Forward Engineer Database
+
+-----------
+Model Setup
+-----------
+-Update database.py to point to new DB
+
+-Create a model file for each table in the DB in single tense
+
+-Copy CRUD queries to each model file from SQL setup text file
+
+-Validate which variables will be recieved from forms vs. those kept in session state
+--Make sur eeach function is taking varibles to match the queries
+--Update queries to use variables and format ("{}".format()) them properly
+
+++++++++++++++++
+Deploy and Debug
+++++++++++++++++
+
+Now that you are code complete
+
+**************************************
+STYLE STYLE STYLE your heart out baby!
+**************************************

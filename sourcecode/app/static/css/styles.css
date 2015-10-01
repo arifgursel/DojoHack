@@ -1,0 +1,359 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+/*============ ELEMENT OVERRIDES==============*/
+html{
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	background-color: #F5FFFA;
+}
+p, hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*============ MAIN LEGO BLOCKS==============*/
+/* Master Container */
+#container{
+	width: 100%;
+	margin: 0px auto;
+
+}
+/*Main Top Container. This will hold all divs that makeup the first major block*/
+#header{
+	display: block;
+	height: auto;
+	width: 100%;
+	background-color: grey;
+	position: fixed;
+	top: 0px;
+	z-index: 1000000;
+ 
+}
+	#header a{
+		font-weight: bold;
+		text-decoration: none;
+		border-bottom: 3px dotted cornflowerblue;
+	}
+	#header span{
+		text-transform: uppercase;
+		color: #DCDCDC;
+		border-bottom: 1px dotted cornflowerblue;
+		margin-right: 0px;
+		margin-top: 25px;
+		float: right;
+	}
+/*Main Side Container. This will hold all divs that makeup the side bar and displays as an inline block*/
+.sidebar{
+	background-color: LEMONCHIFFON;
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px auto;
+	padding: 0px;
+
+}
+/*Main Content Container. This will hold all divs that makeup the content block and displays as an inline block*/
+.sidecontent{
+ 	background-color: LEMONCHIFFON;
+ 	width: 67%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px auto;
+	padding: 0px;
+}
+.content{
+	border-top: 10px solid black;
+ 	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 60px;
+	padding-top: 15px;
+
+}
+ 	.content ul, ol{
+ 		margin-top: 10px;
+ 		margin-bottom: 10px;
+ 	}
+	.content ul li, ol li{
+		margin-left: 20px;
+	}
+/*Main Top Container. This will hold all divs that makeup the first major block*/
+#footer{
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: black;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1000000;
+}
+/*============ LEGO BLOCK==============*/
+/* Element Container. This will hold other divs and display as an inline block*/
+.block{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px auto;
+	width: 32%;
+}
+
+/*============ IMAGE MANIPUATION=============*/
+/* Logo Container. This will access the main logo image and used for direct manupulation*/
+#logo{
+
+}
+#logo img{
+	width: 150px;
+	height: auto;
+	margin: 15px 0px 15px 15px;
+}
+#logo h6{
+	text-align: center;
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+#mark img{
+	width: 30px;
+	height: auto;
+	margin: 15px 0px;
+	float: right;
+}
+/* Logo Container. This will access the footer logo image and used for direct manupulation*/
+#logo-footer img{
+	width: 100px;
+	height: auto;
+	margin: 10px 0px 10px 30px;
+	padding: 5px;
+	border: 2px solid yellow;
+	border-radius: 5px;
+}
+#devby img{
+	width: 75px;
+	height: auto;
+	margin: 15px 0px;
+	float: right;
+}
+/*============ MAIN NAVIGATION BLOCKS==============*/
+/* Horizontal Navigation Container. This will hold a horizontol list of elements and display and a block*/
+.nav-hor{
+	
+}
+	.nav-hor ul{
+		display: inline;
+		padding: 5px 10px;
+		margin-top: 0px auto;
+		border-left: 2px solid white;
+		border-right: 2px solid white;
+	}
+	
+	.nav-hor li:first-child{
+		border-left: 1px solid black;
+	}
+	.nav-hor li:nth-child(even){
+		
+	}
+	.nav-hor li:nth-child(odd){
+	
+	}
+	.nav-hor li:last-child{
+		border-right: 1px solid black;
+	} 
+
+/* Vertical Navigation Container. This will hold a vertical list of elements and display and a block*/
+.nav-ver{
+	width: 100px;
+
+}
+	.nav-ver ul{
+		margin-left: 10px;
+	}
+
+	.nav-ver li{
+		margin-bottom: 5px;
+		text-decoration: underline;
+	}
+/*======Div Styling For Layout=====*/
+#register{
+	margin: 75px;
+	padding: 15px;
+	width: 30%;
+	overflow: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#login{
+	margin: 75px;
+	padding: 15px;
+	width: 30%;
+	overflow: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+/*======Form Styling=====*/
+form{
+	width: 100%;
+	overflow: auto;
+}
+.labels{
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	text-align: right;
+}
+	.labels p{
+		margin: 10px 0px;
+	}
+.inputs{
+	width: 70%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"]{
+	display: block;
+	height: 1.5em;
+	width: 70%;
+	margin: 10px 0px;
+}
+input[type="submit"]{
+	border-radius: 3px;
+	color: white;
+	font-size: .8em;
+	margin-top: 10px;
+	padding: 5px;
+	background-color: #191970;
+	float: right;
+}
+textarea{
+	border-radius: 3px;
+	width: 100%;
+	height: 75px;
+}
+
+/*======Table Styling For Decorative Rows=====*/
+table{
+	font-size: .8em;
+	background-color: #EEEEEE; /*grey*/
+	width: 100%;
+	border: 2px solid black;
+}
+	table th{
+		background-color: #CCCCCC; /* darker grey*/
+		text-transform: uppercase;
+		padding: 10px;
+		border: 5px solid black;
+
+	}
+	table tr:first-child{
+		background-color: darkgrey; /* white */
+		border: 1px solid black;
+
+	}
+	table tr:nth-child(even){
+		background-color: #FFFFFF; /* white */
+
+	}
+	table td{
+		padding: 5px;
+	}
+/*======Button Styling For Decorative Clickables and Shit!=====*/
+.no, .yes{
+	border: 2px solid black;
+	padding: 10px;
+	color: white;
+}
+	.no a, .yes a{
+		color: white;
+		font-weight: bold;
+		text-decoration: none;
+		font-size: .8em;
+	}
+.no{
+	margin: 20px 10px 10px 100px;
+	background-color: grey;
+}
+.yes{
+	margin: 20px 10px 10px 50px;
+	background-color: red;
+}
+.postbutton{
+	background-color: blue;
+}
+.commentbutton{
+	background-color: green;
+}
+/*======Flash Styling For Server Messages and Shit!=====*/
+.flasherror{
+	padding: 10px;
+	color: white;
+	background-color: red;
+	border: 2px solid black;
+	font-size: .8em;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.flashwarning{
+	padding: 10px;
+	color: black;
+	background-color: yellow;
+	border: 2px solid black;
+	font-size: .8em;
+	font-weight: bold;
+	margin-top: 5px;
+}
+/*============ DEBUG/DECORATION CLASSES==============*/
+.blueBox{
+	border: 1px solid white;
+	background-color: blue;
+	color: white; 
+	padding: 10px 10px;
+	float: right;
+	margin: 15px 10px;
+}
+.yBox{
+	border: 3px solid yellow;
+}
+.blkBox{
+	border: 3px solid black;
+}
+.grnBox{
+	border: 3px solid green;
+}
+.rBox{
+	border: 1px solid red;
+}
+.bold{
+	font-weight: bold;
+}
+.under{
+	text-decoration: underline;
+}
+.blkBack{
+	background-color: #689BFF;
+}
+.rBack{
+	background-color: #FD9A98;
+}
+.yBack{
+	background-color: #FECB00;
+}
+.grnBack{
+	background-color: #1FCA21;
+}
+.grn{
+	color: green;
+}
+.blu{
+	color: blue;
+}
+.ylw{
+	color: yellow;
+}
+.red{
+	color: red;
+}

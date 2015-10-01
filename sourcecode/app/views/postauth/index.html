@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src"{{url_for('static', filename='js/main.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header"> 
+        <div class="block" id="logo"><img src="{{url_for('static', filename='img/logo_white.png')}}"></div>  
+        <div class="block"></div>  
+        <div class="block" id="mark">
+          <a href="/logout"><span>Log Out</span></a>
+        </div>  
+      </div>
+      <div class="content">
+        
+      </div>
+      <div id="footer">
+        <div class="block" id="logo-footer"><img src="{{url_for('static', filename='img/logo_white.png')}}"></div>  
+        <div class="block"><p>Project Name</p></div>  
+        <div class="block" id="devby"><img src="{{url_for('static', filename='img/logo_footer_grey.png')}}"></div>     
+      </div>
+    </div>
+  </body>
+</html>

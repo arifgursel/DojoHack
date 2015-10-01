@@ -1,0 +1,66 @@
+<html>
+  <head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+	<script src"{{url_for('static', filename='js/main.js')}}"></script>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+  </head>
+  <body>
+	<div id="container">
+	  <div id="header"> 
+		<div class="block" id="logo"><img src="{{url_for('static', filename='img/logo_white.png')}}"></div>  
+		<div class="block"></div>  
+		<div class="block" id="mark"><span>Please Login or Register</span>
+		</div>  
+	  </div>
+	  <div class="content">
+		<div id="register">
+		  <form action='/processreg' method='POST'>
+			<h1>Registration</h1>
+			{% with messages = get_flashed_messages() %}
+			  {% if messages %}
+				{% for message in messages %}
+				  <p class='flasherror'>{{message}}</p>
+				{% endfor %}
+			  {% endif %}
+			{% endwith %}
+			<div class="labels">
+			  <p>First Name:</p>
+			  <p>Last Name:</p>
+			  <p>Email:</p>
+			  <p>Password:</p>
+			  <p>Confirm pw:</p>
+			</div>
+			<div class="inputs">
+			  <input type='text' name='first_name'>
+			  <input type='text' name='last_name'>
+			  <input type='email' name='email'>
+			  <input type='password' name='password1'>
+			  <input type='password' name='password2'>
+			</div>
+			<input type='submit' value="Register">
+		  </form>
+		</div>
+		<div id="login">
+		  <form action='/processlog' method='POST'>
+			<h1>Login</h1>
+			<div class="labels">
+			  <p>Email:</p>
+			  <p>Password:</p>
+			</div>
+			<div class="inputs">
+			  <input type='email' name='email'>
+			  <input type='password' name='password'>
+			</div>
+			<input type='submit' value="Login">
+		  </form>
+		</div> 
+	  </div>
+	  <div id="footer">
+		<div class="block" id="logo-footer"><img src="{{url_for('static', filename='img/logo_white.png')}}"></div>  
+		<div class="block"><p>Project Name</p></div>  
+		<div class="block" id="devby"><img src="{{url_for('static', filename='img/logo_footer_grey.png')}}"></div>     
+	  </div>
+	</div>
+  </body>
+</html>

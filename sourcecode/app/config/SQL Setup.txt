@@ -1,0 +1,44 @@
+SQL Setup
+=========
+
+Table: < enter name >
+----------------------
+Create:
+Read:
+Update:
+Delete:
+
+Table: < enter name >
+----------------------
+Create:
+Read:
+Update:
+Delete:
+
+Table: < enter name >
+----------------------
+Create:
+Read:
+Update:
+Delete:
+
+Table: < enter name >
+----------------------
+Create:
+Read:
+Update:
+Delete:
+
+Table: < enter name >
+----------------------
+Create:
+Read:
+Update:
+Delete:
+
+Table: < enter name >
+----------------------
+Create:
+Read:
+Update:
+Delete:
